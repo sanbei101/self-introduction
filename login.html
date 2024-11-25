@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入注册页面</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container login-container">
+            <form action="#" method="post">
+                <h2>登入</h2>
+                <input type="text" placeholder="用户名" required>
+                <input type="password" placeholder="密码" required>
+                <a href="#">忘记密码？</a>
+                <button type="submit">登入</button>
+            </form>
+        </div>
+        <div class="form-container register-container">
+            <form action="#" method="post">
+                <h2>注册</h2>
+                <input type="text" placeholder="用户名" required>
+                <input type="email" placeholder="邮箱" required>
+                <input type="password" placeholder="密码" required>
+                <button type="submit">注册</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h2>欢迎回来！</h2>
+                    <p>请输入您的信息以便登录。</p>
+                    <button class="ghost" id="login">登入</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h2>新用户？</h2>
+                    <p>注册一个账号，加入我们吧！</p>
+                    <button class="ghost" id="register">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

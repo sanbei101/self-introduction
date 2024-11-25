@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的爱好</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>我的爱好</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="skills.html">我的技能</a></li>
+                <li><a href="hobbies.html">我的爱好</a></li>
+                <li><a href="login.html">登入</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>兴趣爱好</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-card">
+                <i class="fas fa-book"></i>
+                <h3>阅读</h3>
+                <p>喜欢探索不同类型的书籍,尤其是科幻和历史小说。</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-hiking"></i>
+                <h3>徒步旅行</h3>
+                <p>享受大自然的美景,经常参加周末徒步活动。</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-guitar"></i>
+                <h3>弹吉他</h3>
+                <p>自学吉他多年,喜欢在闲暇时间弹奏自己喜欢的歌曲。</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-camera"></i>
+                <h3>摄影</h3>
+                <p>热爱捕捉生活中的美好瞬间,特别喜欢风景和街头摄影。</p>
+            </div>
+            <div class="hobby-card">
+                <i class="fas fa-chess"></i>
+                <h3>下国际象棋</h3>
+                <p>享受国际象棋的策略和挑战,经常在线上与人对弈。</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<style>
+    .hobbies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .hobby-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hobby-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .hobby-card i {
+        font-size: 3rem;
+        color: #3498db;
+        margin-bottom: 1rem;
+    }
+
+    .hobby-card h3 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    .hobby-card p {
+        margin-bottom: 0;
+        color: #7f8c8d;
+    }
+
+    @media (max-width: 768px) {
+        .hobbies-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

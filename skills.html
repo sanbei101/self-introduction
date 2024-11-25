@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的技能</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>我的技能</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="skills.html">我的技能</a></li>
+                <li><a href="hobbies.html">我的爱好</a></li>
+                <li><a href="login.html">登入</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>专业技能</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Web开发</h3>
+                <p>精通HTML, CSS和JavaScript,能够创建响应式和交互式网站。</p>
+            </div>
+            <div class="skill-card">
+                <h3>UI/UX设计</h3>
+                <p>擅长使用Figma和Adobe XD创建用户友好的界面和流畅的用户体验。</p>
+            </div>
+            <div class="skill-card">
+                <h3>后端开发</h3>
+                <p>熟练使用Node.js和Python,能够构建高效的服务器端应用。</p>
+            </div>
+            <div class="skill-card">
+                <h3>数据库管理</h3>
+                <p>精通SQL和NoSQL数据库,如MySQL, MongoDB和PostgreSQL。</p>
+            </div>
+            <div class="skill-card">
+                <h3>版本控制</h3>
+                <p>熟练使用Git进行协作开发和项目管理。</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<style>
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .skill-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .skill-card h3 {
+        color: #2c3e50;
+        margin-top: 0;
+    }
+
+    .skill-card p {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
